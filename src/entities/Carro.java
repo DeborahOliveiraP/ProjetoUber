@@ -4,8 +4,11 @@ public class Carro {
 
 	public String uberComfort;
 	public String uberX;
-	public String uberFlash;
+	public String uberBlack;
+	
+	
 	public String getUberComfort() {
+		
 		return uberComfort;
 	}
 	public void setUberComfort(String uberComfort) {
@@ -17,12 +20,14 @@ public class Carro {
 	public void setUberX(String uberX) {
 		this.uberX = uberX;
 	}
-	public String getUberFlash() {
-		return uberFlash;
+	public String getUberBlack() {
+		return uberBlack;
 	}
-	public void setUberFlash(String uberFlash) {
-		this.uberFlash = uberFlash;
+	public void setUberBlack(String uberBlack) {
+		this.uberBlack = uberBlack;
 	}
+	
 	
 	
 }
+

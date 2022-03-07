@@ -1,16 +1,13 @@
 package entities;
 
-import entities.model.Destino;
-import entities.model.Usuario;
-
 public class Corrida {
 
+	private int id;
+	private String status;
 	private Destino destino;
 	private Usuario motorista;
 	private Usuario passageiro;
 	private Pagamento pagamento;
-	private String status; 
-	private int id;
 	
 	public Destino getDestino() {
 		return destino;
@@ -36,17 +33,6 @@ public class Corrida {
 	public void setPagamento(Pagamento pagamento) {
 		this.pagamento = pagamento;
 	}
-	public String getStatus() {
-		return status;
-	}
-	public void setStatus(String status) {
-		this.status = status;
-	}
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
+	
 	
 }

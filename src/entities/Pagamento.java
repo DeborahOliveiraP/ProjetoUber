@@ -7,4 +7,5 @@ public class Pagamento {
 	private double pix;
 	
 	
+	
 }

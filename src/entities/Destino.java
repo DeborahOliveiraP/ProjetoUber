@@ -1,13 +1,11 @@
-package entities.model;
+package entities;
 
 public class Destino {
-	
+
 	private String Cidade;
-	private String Bairro;
-	private String Logadouro;
-	private String Cep;
-	public Object Destino;
-	
+	private String bairro;
+	private String logadouro;
+	private int cep;
 	
 	public String getCidade() {
 		return Cidade;
@@ -16,22 +14,24 @@ public class Destino {
 		Cidade = cidade;
 	}
 	public String getBairro() {
-		return Bairro;
+		return bairro;
 	}
 	public void setBairro(String bairro) {
-		this.Bairro = bairro;
+		this.bairro = bairro;
 	}
 	public String getLogadouro() {
-		return Logadouro;
+		return logadouro;
 	}
 	public void setLogadouro(String logadouro) {
-		this.Logadouro = logadouro;
+		this.logadouro = logadouro;
 	}
-	public String getCep() {
-		return Cep;
+	public int getCep() {
+		return cep;
 	}
-	public void setCep(String cep) {
-		this.Cep = cep;
+	public void setCep(int cep) {
+		this.cep = cep;
 	}
+	
+	
 	
 }
