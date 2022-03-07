@@ -47,7 +47,7 @@ public class Program {
 			pass1.setSenhaA(enter.next());
 	
 			
-			
+			//consertei o codigo o problema tava em usuarios
 			if (pass1.getNomeUsuario().equals(pass1.getNomeU())) {
 				
 			}
