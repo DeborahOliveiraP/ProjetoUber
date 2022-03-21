@@ -1,5 +1,6 @@
 package entities;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -62,7 +63,16 @@ public class Passageiro extends Usuario {
 		System.out.print("Insira uma SENHA válida: ");
 		setSenhaA(ent.next());
 	}
-	
+	public void verificarLoginUm() {
+		if(getNomeUsuario() == null) {
+			
+			System.out.println("USUÁRIO NÃO POSSUI AINDA UM CADASTRO");
+			
+		}else {
+			System.out.println("USUÁRIO VÁLIDO, BEM-VINDO");
+		}
+		
+	}
 	public void verificarLogin() {
 		
 		boolean vdd = false;
@@ -188,4 +198,3 @@ public class Passageiro extends Usuario {
 	}
 
 }
-

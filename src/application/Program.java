@@ -1,15 +1,17 @@
 package application;
 
 import java.util.Scanner;
+import java.util.ArrayList;
 import entities.Passageiro;
-
+import entities.Motorista;
 
 public class Program {
 	public static void main(String[] args) {
 		Scanner enter = new Scanner(System.in);
+		ArrayList<Passageiro> usuar = new ArrayList<>();
 		
 		Passageiro pass1 = new Passageiro();
-
+		Motorista motor = new Motorista();
 		
 		System.out.println("====== Tela inicial de Login =====");
 		System.out.println("1. Para realizar o login\n2. para realizar o cadastra");
@@ -19,9 +21,13 @@ public class Program {
 		
 		if (opcaoLogin == 1) {
 			
-			pass1.loginEfetuado();
-			
-			
+			System.out.print("LOGIN: ");
+			pass1.setNomeU(enter.next());
+			System.out.print("SENHA: ");
+			pass1.setSenhaA(enter.next());
+	
+			pass1.verificarLoginUm();
+
 		}else if ( opcaoLogin == 2) {
 			
 			pass1.endereco();
@@ -31,8 +37,6 @@ public class Program {
 			pass1.setNomeUsuario(enter.next());
 			System.out.print("Informe uma senha válida: ");
 			pass1.setSenhaApp(enter.next());
-			
-		}
 			System.out.println("========== CADASTRO REALIZADO ==========\n");
 			System.out.println("Realize o primeiro LOGIN");
 			
@@ -40,6 +44,10 @@ public class Program {
 			pass1.setNomeU(enter.next());
 			System.out.print("SENHA: ");
 			pass1.setSenhaA(enter.next());
+			
+		}
+			
+			
 	
 			pass1.verificarLogin();
 			
@@ -63,8 +71,9 @@ public class Program {
 				}else {
 					verdadeiro = false;
 					System.out.print("Obrigado por ter escolhido nossos serviços");	
+				}
+			
 			}
-		}
+		
 	}
 }
-
