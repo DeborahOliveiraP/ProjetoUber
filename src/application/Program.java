@@ -1,11 +1,13 @@
 package application;
 
 import java.util.Scanner;
+import java.util.ArrayList;
 import entities.Passageiro;
 
 public class Program {
 	public static void main(String[] args) {
 		Scanner enter = new Scanner(System.in);
+      ArrayList<Passageiro> usuar = new ArrayList<>();
 		
 		Passageiro pass1 = new Passageiro();
 		
