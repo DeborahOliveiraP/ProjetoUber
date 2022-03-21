@@ -1,7 +1,7 @@
 package entities;
 
 import java.util.Scanner;
-
+import application.Program;
 
 
 public class Passageiro extends Usuario {
@@ -63,12 +63,14 @@ public class Passageiro extends Usuario {
 		setSenhaA(ent.next());
 	}
 	public void verificarLoginUm() {
+		
 		if(getNomeUsuario() == null) {
-			System.err.println("USUÁRIO NÃO POSSUI AINDA UM CADASTRO");
-			
+			System.err.println("USUÁRIO NÃO POSSUI AINDA UM CADASTRO");	
+		    
 		}else {
 			System.out.println("USUÁRIO VÁLIDO, BEM-VINDO");
-		}
+			
+		 }
 		
 	}
     public void verificarLogin() {
@@ -79,12 +81,10 @@ public class Passageiro extends Usuario {
 			
 			if (getNomeUsuario().equals(getNomeU())) {
 				vdd = true;
-
-				if (getSenhaApp().equals(getSenhaA())) {  
+				if (getSenhaApp().equals(getSenhaA()))   
 					vdd = true;
-					System.out.println("USUÁRIO VÁLIDO, BEM-VINDO");
 				}	
-			}if (getNomeUsuario() != (getNomeU()) || getSenhaApp() != (getSenhaA())) {
+			if (getNomeUsuario() != (getNomeU()) || getSenhaApp() != (getSenhaA())) {
 				System.err.println("USUÁRIO E SENHA INCORRETA, INSIRA UM USUÁRIO VÁLIDO: ");
 				loginEfetuado();
 			}

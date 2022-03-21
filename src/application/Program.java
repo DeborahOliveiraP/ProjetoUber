@@ -23,7 +23,7 @@ public class Program {
 			pass1.setSenhaA(enter.next());
 	
 			pass1.verificarLoginUm();
-
+			
 		}else if ( opcaoLogin == 2) {
 			
 			pass1.endereco();
