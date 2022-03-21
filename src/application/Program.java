@@ -1,17 +1,13 @@
 package application;
 
 import java.util.Scanner;
-import java.util.ArrayList;
 import entities.Passageiro;
-import entities.Motorista;
 
 public class Program {
 	public static void main(String[] args) {
 		Scanner enter = new Scanner(System.in);
-		ArrayList<Passageiro> usuar = new ArrayList<>();
 		
 		Passageiro pass1 = new Passageiro();
-		Motorista motor = new Motorista();
 		
 		System.out.println("====== Tela inicial de Login =====");
 		System.out.println("1. Para realizar o login\n2. para realizar o cadastra");
