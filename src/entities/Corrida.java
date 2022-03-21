@@ -2,6 +2,8 @@ package entities;
 
 public class Corrida {
 
+	private int id;
+	private String status;
 	private Destino destino;
 	private Usuario motorista;
 	private Usuario passageiro;

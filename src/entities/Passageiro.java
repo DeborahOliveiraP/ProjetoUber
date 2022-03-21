@@ -1,6 +1,5 @@
 package entities;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -44,7 +43,7 @@ public class Passageiro extends Usuario {
 		cadast.setId(ent.nextInt());
 		
 		while (cadast.getId() < 18) {
-			System.out.println("IDADE ABAIXO DO PERMITIDO, PARA PROSEGUIR O USUÁRIO DEVE SER MAIOR DE IDADE ");
+			System.err.println("IDADE ABAIXO DO PERMITIDO, PARA PROSEGUIR O USUÁRIO DEVE SER MAIOR DE IDADE ");
 			cadast.setId(ent.nextInt());
 		}
 		
@@ -65,15 +64,14 @@ public class Passageiro extends Usuario {
 	}
 	public void verificarLoginUm() {
 		if(getNomeUsuario() == null) {
-			
-			System.out.println("USUÁRIO NÃO POSSUI AINDA UM CADASTRO");
+			System.err.println("USUÁRIO NÃO POSSUI AINDA UM CADASTRO");
 			
 		}else {
 			System.out.println("USUÁRIO VÁLIDO, BEM-VINDO");
 		}
 		
 	}
-	public void verificarLogin() {
+    public void verificarLogin() {
 		
 		boolean vdd = false;
 		while (vdd == false) {
@@ -81,13 +79,13 @@ public class Passageiro extends Usuario {
 			
 			if (getNomeUsuario().equals(getNomeU())) {
 				vdd = true;
-				if (getSenhaA().equals(getSenhaA())) {
-					System.out.println("USUÁRIO VÁLIDO, BEM-VINDO");
+
+				if (getSenhaApp().equals(getSenhaA())) {  
 					vdd = true;
-				}
-			}else {
-				
-				System.out.println("USUÁRIO E SENHA INCORRETA, INSIRA UM USUÁRIO VÁLIDO: ");
+					System.out.println("USUÁRIO VÁLIDO, BEM-VINDO");
+				}	
+			}if (getNomeUsuario() != (getNomeU()) || getSenhaApp() != (getSenhaA())) {
+				System.err.println("USUÁRIO E SENHA INCORRETA, INSIRA UM USUÁRIO VÁLIDO: ");
 				loginEfetuado();
 			}
 		}
@@ -115,8 +113,7 @@ public class Passageiro extends Usuario {
 	public void escolhaDestino(double orig) {
 		String tipo;
 		double taxa = 0;
-		System.out.println("======================================");
-		System.out.print("INFORME O TIPO DE UBER QUE DESEJA\n1.UBERX\n2.UBERBLACK\n3.UBER CONFORT\n>>");
+		System.out.print("INFORME O TIPO DE UBER QUE DESEJA\n1.UBERX (R$7.20)\n2.UBERBLACK (R$9.70)\n3.UBER CONFORT (R$11.10)\n>>");
 		tipo = ent.next().toUpperCase();
 		switch(tipo) {
 		case "1":

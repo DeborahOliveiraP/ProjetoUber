@@ -44,10 +44,10 @@ public  class Motorista  {
 	}
 
 	public void motorista() {
-		
 		int motoristaAl;
 		Random random = new Random();
 		motoristaAl = random.nextInt(3);
+		System.out.println(motoristaAl);
 		switch (motoristaAl) {
 		case 0:
 			this.nomeMotorista = "pedro h";
@@ -55,25 +55,28 @@ public  class Motorista  {
 			this.corCarro = "vermelho";
 			this.placa = "xxx-0000";
 			break;
+			
 		case 1:
 			this.nomeMotorista = "GUILHERME";
 			this.modeloCarro = "ONIX";
-			this.corCarro = "BRANCO";
+			this.corCarro = "BANCO";
 			this.placa = "YYY-1111";
+			break;
 		case 2:
 			this.nomeMotorista = "JOÃO";
 			this.modeloCarro = "FOX";
 			this.corCarro = "PRETO";
 			this.placa = "WWW-333";
+			break;
 	
 		}
-		System.out.println("NOME DO MOTORISTA " + nomeMotorista);
-		System.out.println("MODELO DO CARRO " + modeloCarro);
-		System.out.println("COR DO CARRO " + corCarro);
-		System.out.println("PLACA " + placa);
+		System.out.println("NOME DO MOTORISTA " + this.nomeMotorista);
+		System.out.println("MODELO DO CARRO " + this.modeloCarro);
+		System.out.println("COR DO CARRO " + this.corCarro);
+		System.out.println("PLACA " + this.placa);
+		
+		
 	
 	}
-}
 	
-
-
+}

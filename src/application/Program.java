@@ -41,14 +41,16 @@ public class Program {
 			System.out.print("SENHA: ");
 			pass1.setSenhaA(enter.next());
 			
+			pass1.verificarLogin();
+			
 		}
 			
 			
 	
-			pass1.verificarLogin();
+			
 			
 			System.out.println("======================================");
-			System.out.println("Bem-vindo ao aplicativo de corrida\n"
+			System.out.println("Bem-vindo ao aplicativo Uber\n"
 					+ "faça seu pedido de corrida");
 			System.out.println("======================================");
 			
