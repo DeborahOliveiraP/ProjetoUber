@@ -44,10 +44,7 @@ public class Program {
 			pass1.verificarLogin();
 			
 		}
-			
-			
-	
-			
+
 			
 			System.out.println("======================================");
 			System.out.println("Bem-vindo ao aplicativo Uber\n"

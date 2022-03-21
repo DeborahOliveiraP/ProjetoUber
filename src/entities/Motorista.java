@@ -50,30 +50,30 @@ public  class Motorista  {
 		System.out.println(motoristaAl);
 		switch (motoristaAl) {
 		case 0:
-			this.nomeMotorista = "pedro h";
+			this.nomeMotorista = "Pedro H";
 			this.modeloCarro = "Fiat Uno";
 			this.corCarro = "vermelho";
 			this.placa = "xxx-0000";
 			break;
 			
 		case 1:
-			this.nomeMotorista = "GUILHERME";
+			this.nomeMotorista = "Guilherme V";
 			this.modeloCarro = "ONIX";
 			this.corCarro = "BANCO";
 			this.placa = "YYY-1111";
 			break;
 		case 2:
-			this.nomeMotorista = "JOÃO";
+			this.nomeMotorista = "Joao V ";
 			this.modeloCarro = "FOX";
 			this.corCarro = "PRETO";
 			this.placa = "WWW-333";
 			break;
 	
 		}
-		System.out.println("NOME DO MOTORISTA " + this.nomeMotorista);
-		System.out.println("MODELO DO CARRO " + this.modeloCarro);
-		System.out.println("COR DO CARRO " + this.corCarro);
-		System.out.println("PLACA " + this.placa);
+		System.out.println("NOME DO MOTORISTA: " + this.nomeMotorista);
+		System.out.println("MODELO DO CARRO: " + this.modeloCarro);
+		System.out.println("COR DO CARRO: " + this.corCarro);
+		System.out.println("PLACA: " + this.placa);
 		
 		
 	
