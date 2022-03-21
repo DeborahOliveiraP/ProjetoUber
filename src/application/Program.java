@@ -23,7 +23,7 @@ public class Program {
 			pass1.setSenhaA(enter.next());
 	
 			pass1.verificarLoginUm();
-			
+
 		}else if ( opcaoLogin == 2) {
 			
 			pass1.endereco();
@@ -69,6 +69,7 @@ public class Program {
 				}else {
 					verdadeiro = false;
 					System.out.print("Obrigado por ter escolhido nossos serviços");	
+					
 				}
 			
 			}
