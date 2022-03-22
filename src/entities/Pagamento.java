@@ -2,29 +2,9 @@ package entities;
 
 import java.util.Scanner;
 
-public class Pagamento {
+public class Pagamento implements Preco {
 	Scanner ent = new Scanner(System.in);
-	private double cartao;
-	private double dinheiro;
-	private double pix;
-	public double getCartao() {
-		return cartao;
-	}
-	public void setCartao(double cartao) {
-		this.cartao = cartao;
-	}
-	public double getDinheiro() {
-		return dinheiro;
-	}
-	public void setDinheiro(double dinheiro) {
-		this.dinheiro = dinheiro;
-	}
-	public double getPix() {
-		return pix;
-	}
-	public void setPix(double pix) {
-		this.pix = pix;
-	}
+	
 	
 	public void formaPagamento() {
 		System.out.println("======================================");

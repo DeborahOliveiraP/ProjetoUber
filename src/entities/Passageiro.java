@@ -34,25 +34,34 @@ public class Passageiro extends Usuario {
 	public void setSenhaA(String senhaA) {
 		this.senhaA = senhaA;
 	}
-
+	
 	public void endereco() {
-		Usuario cadast = new Passageiro();
+		
 		System.out.println("Nome: ");
-		cadast.setNome(ent.nextLine());
+		setNome(ent.nextLine());
 		
 		System.out.println("Idade: ");
-		cadast.setId(ent.nextInt());
+		setId(ent.nextInt());
 		
-		while (cadast.getId() < 18) {
+		while (getId() < 18) {
 			System.out.println("IDADE ABAIXO DO PERMITIDO, PARA PROSEGUIR O USUÁRIO DEVE SER MAIOR DE IDADE ");
-			cadast.setId(ent.nextInt());
+			setId(ent.nextInt());
 		}
 		
 		System.out.println("Email: ");
-		cadast.setEmail(ent.next());
+		setEmail(ent.next());
 		
 		System.out.println("Telefone: ");
-		cadast.setTelefone(ent.next());
+		setTelefone(ent.next());
+	}
+	
+	public void enderecoRetorno() {
+		System.out.println("=========== DADOS DO CADASTRO ===========");
+		System.out.println("NOME DO USUÁRIO: " + getNome());
+		System.out.println("IDADE: " + getId());
+		System.out.println("EMAIL: " + getEmail());
+		System.out.println("TELEFONE: " + getTelefone());
+		System.out.println("=========================================");
 	}
 	
 	public void loginEfetuado() {
@@ -65,7 +74,8 @@ public class Passageiro extends Usuario {
 	}
 	public void verificarLoginUm() {
 		if(getNomeUsuario() == null) {
-			System.err.println("USUÁRIO NÃO POSSUI AINDA UM CADASTRO");
+			
+			System.out.println("USUÁRIO NÃO POSSUI AINDA UM CADASTRO");
 			
 		}else {
 			System.out.println("USUÁRIO VÁLIDO, BEM-VINDO");
@@ -77,10 +87,16 @@ public class Passageiro extends Usuario {
 		boolean vdd = false;
 		while (vdd == false) {
 			
-			if (getSenhaApp().equals(getSenhaA()) && getNomeUsuario().equals(getNomeU()) ){
-				vdd = true;
+			
+			if (getNomeUsuario().equals(getNomeU())) {
+				
+				if (getSenhaA().equals(getSenhaA())) {
+					System.out.println("USUÁRIO VÁLIDO, BEM-VINDO");
+					vdd = true;
+				}
 			}else {
-				System.err.println("USUÁRIO E SENHA INCORRETA, INSIRA UM USUÁRIO VÁLIDO: ");
+				
+				System.out.println("USUÁRIO E SENHA INCORRETA, INSIRA UM USUÁRIO VÁLIDO: ");
 				loginEfetuado();
 			}
 		}
@@ -108,7 +124,7 @@ public class Passageiro extends Usuario {
 	public void escolhaDestino(double orig) {
 		String tipo;
 		double taxa = 0;
-		System.out.print("INFORME O TIPO DE UBER QUE DESEJA\n1.UBERX\n2.UBERBLACK\n3.UBER CONFORT\n>>");
+		System.out.print("INFORME O TIPO DE UBER QUE DESEJA\n1.UBERX (R$7.20)\n2.UBERBLACK (R$9.70)\n3.UBER CONFORT (R$11.10)\n>>");
 		tipo = ent.next().toUpperCase();
 		switch(tipo) {
 		case "1":
@@ -186,8 +202,7 @@ public class Passageiro extends Usuario {
 		System.out.println("Valor da carrida R$ " + totalcorrida);
 		motor.motorista();
 		pagamento.formaPagamento();
-
+		System.out.println("======================================");
 	}
-
 
 }
