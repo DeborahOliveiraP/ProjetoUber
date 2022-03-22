@@ -58,6 +58,7 @@ public class Program {
 						////////////////////////////////////
 						
 						System.out.println("DESEJA REALIZAR MAIS UM CADASTRO [S/N]");
+						System.out.print(">>");
 						String resposta2 = enter.next();
 						
 						if (resposta2.equalsIgnoreCase("n")) {
@@ -89,6 +90,7 @@ public class Program {
 						System.out.println("========== CADASTRO REALIZADO ==========\n");
 						////////////////////////////////////
 						System.out.println("DESEJA REALIZAR MAIS UM CADASTRO [S/N]");
+						System.out.print(">>");
 						String resposta2 = enter.next();
 						
 						if (resposta2.equalsIgnoreCase("n")) {
@@ -120,6 +122,7 @@ public class Program {
 						System.out.println("========== CADASTRO REALIZADO ==========\n");
 						////////////////////////////////////
 						System.out.println("DESEJA REALIZAR MAIS UM CADASTRO [S/N]");
+						System.out.print(">>");
 						String resposta2 = enter.next();
 						
 						if (resposta2.equalsIgnoreCase("n")) {
@@ -147,7 +150,7 @@ public class Program {
 		}	
 			
 			System.out.println("======================================");
-			System.out.println("Bem-vindo ao aplicativo de corrida\n"
+			System.out.println("Bem-vindo ao aplicativo Uber\n"
 					+ "faça seu pedido de corrida");
 			System.out.println("======================================");
 			
@@ -158,6 +161,7 @@ public class Program {
 				pass1.escolhaDestino(opcaoLogin);
 				
 				System.out.print("DESEJA REALIZAR MAIS UMA CORRIDA!?\n1.para sim\n2.para não\n>>");
+				System.out.print(">>");
 				pergunta = enter.nextInt();
 				if (pergunta == 1) {
 					verdadeiro = true;

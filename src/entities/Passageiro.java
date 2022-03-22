@@ -44,7 +44,7 @@ public class Passageiro extends Usuario {
 		setId(ent.nextInt());
 		
 		while (getId() < 18) {
-			System.out.println("IDADE ABAIXO DO PERMITIDO, PARA PROSEGUIR O USUÁRIO DEVE SER MAIOR DE IDADE ");
+			System.err.println("IDADE ABAIXO DO PERMITIDO, PARA PROSEGUIR O USUÁRIO DEVE SER MAIOR DE IDADE ");
 			setId(ent.nextInt());
 		}
 		
@@ -75,7 +75,7 @@ public class Passageiro extends Usuario {
 	public void verificarLoginUm() {
 		if(getNomeUsuario() == null) {
 			
-			System.out.println("USUÁRIO NÃO POSSUI AINDA UM CADASTRO");
+			System.err.println("USUÁRIO NÃO POSSUI AINDA UM CADASTRO");
 			
 		}else {
 			System.out.println("USUÁRIO VÁLIDO, BEM-VINDO");
@@ -86,21 +86,15 @@ public class Passageiro extends Usuario {
 		
 		boolean vdd = false;
 		while (vdd == false) {
-			
-			
-			if (getNomeUsuario().equals(getNomeU())) {
-				
-				if (getSenhaA().equals(getSenhaA())) {
-					System.out.println("USUÁRIO VÁLIDO, BEM-VINDO");
-					vdd = true;
+
+			if (getNomeUsuario().equals(getNomeU()) && getSenhaA().equals(getSenhaA())) {
+				vdd = true; 	
 				}
-			}else {
-				
-				System.out.println("USUÁRIO E SENHA INCORRETA, INSIRA UM USUÁRIO VÁLIDO: ");
+		    }if (getNomeUsuario()!=(getNomeU()) || getSenhaA()!=(getSenhaA())){
+				System.err.println("USUÁRIO E SENHA INCORRETA, INSIRA UM USUÁRIO VÁLIDO: ");
 				loginEfetuado();
 			}
 		}
-	}
 	
 	
 	public String getEscolha() {
