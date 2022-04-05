@@ -1,4 +1,4 @@
-package entities;
+package dominio;
 
 import java.util.Random;
 import java.util.Scanner;

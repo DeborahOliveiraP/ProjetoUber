@@ -1,11 +1,11 @@
-package application;
+package gui;
 
 import java.util.Scanner;
 import java.util.ArrayList;
-import entities.Passageiro;
-import entities.Motorista;
+import servicos.Passageiro;
+import dominio.Motorista;
 
-public class Program {
+public class Main {
 	public static void main(String[] args) {
 		Scanner enter = new Scanner(System.in);
 		ArrayList<Passageiro> usuar = new ArrayList<>();

@@ -1,4 +1,4 @@
-package entities;
+package dominio.enums;
 
 public enum TipoUber {
 	UBERX,

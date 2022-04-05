@@ -1,4 +1,5 @@
-package entities;
+package dominio;
+import interfaces.Pagamento;
 
 public class Corrida {
 

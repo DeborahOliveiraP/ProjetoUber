@@ -1,9 +1,11 @@
-package entities;
+package servicos;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
-
+import dominio.Usuario;
+import dominio.Motorista;
+import interfaces.Pagamento;
+import dominio.enums.*;
 
 public class Passageiro extends Usuario {
 	Scanner ent = new Scanner(System.in);

@@ -1,4 +1,4 @@
-package entities;
+package dominio;
 
 public class Carro {
 
