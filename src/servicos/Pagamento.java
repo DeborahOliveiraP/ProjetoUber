@@ -1,7 +1,7 @@
 package servicos;
 
 import java.util.Scanner;
-import interfaces.Preco;
+import interfaces.Preco; 
 
 public class Pagamento implements Preco {
 	Scanner ent = new Scanner(System.in);
