@@ -1,5 +1,5 @@
 package dominio;
-import interfaces.Pagamento;
+import dominio.Pagamento;
 
 public class Corrida {
 

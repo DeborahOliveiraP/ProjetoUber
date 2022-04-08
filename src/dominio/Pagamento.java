@@ -1,4 +1,4 @@
-package servicos;
+package dominio;
 
 import java.util.Scanner;
 import interfaces.Preco; 

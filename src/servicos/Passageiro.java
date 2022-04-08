@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import dominio.Usuario;
 import dominio.Motorista;
-import servicos.Pagamento;
+import dominio.Pagamento;
 import dominio.enums.*;
 
 public class Passageiro extends Usuario {
